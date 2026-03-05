@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#0f172a;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.container{
+text-align:center;
+}
+
+.box{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+width:280px;
+color:white;
+box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+h2{
+margin-bottom:20px;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:8px;
+border-radius:8px;
+border:none;
+}
+
+.login-btn{
+width:95%;
+padding:10px;
+border:none;
+border-radius:20px;
+background:linear-gradient(to right,#2563eb,#fb7185);
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.theme{
+margin-bottom:15px;
+}
+
+.theme button{
+padding:8px 15px;
+margin:5px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+}
+
+.dark{
+background:#2563eb;
+color:white;
+}
+
+.light{
+background:#fb7185;
+color:white;
+}
+
+.light-mode{
+background:#f1f5f9;
+}
+
+.light-mode .box{
+background:white;
+color:black;
+}
+
+.whatsapp{
+margin-top:20px;
+background:#25D366;
+color:white;
+padding:10px;
+border-radius:25px;
+display:inline-block;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="theme">
+<button class="dark" onclick="darkMode()">Dark Theme</button>
+<button class="light" onclick="lightMode()">Light Theme</button>
+</div>
+
+<div class="box">
+
+<h2>Login</h2>
+
+<input type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+
+<br><br>
+
+<button class="login-btn">Login</button>
+
+</div>
+
+<br>
+
+<a class="whatsapp" href="#">Contact Admin</a>
+
+</div>
+
+<script>
+
+function lightMode(){
+document.body.classList.add("light-mode");
+}
+
+function darkMode(){
+document.body.classList.remove("light-mode");
+}
+
+</script>
+
+</body>
+</html>
